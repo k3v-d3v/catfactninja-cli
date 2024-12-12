@@ -22,6 +22,7 @@ func Execute() {
 	rootCmd.AddCommand(NewCatFactCmd(c))
 	rootCmd.AddCommand(NewCatFactsCmd(c))
 	rootCmd.AddCommand(NewBreedsCmd(c))
+	rootCmd.AddCommand(NewHealthCheck())
 
 	err := rootCmd.Execute()
 	if err != nil {
